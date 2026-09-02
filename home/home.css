@@ -116,7 +116,9 @@ a{
     background-color: var(--cor-destaque);
 }
 
-/* Seção Benefícios */
+/* 
+    Seção Benefícios 
+*/
 
 .beneficios{
     padding: 50px 120px;
@@ -206,7 +208,9 @@ a{
     width: 80%;
 }
 
-/* Banner Meio */
+/* 
+    Banner Meio 
+*/
 .banner-meio{
     height: 60vh;
     background-image: url(../imgs/Banner\ centro.svg);
@@ -219,3 +223,61 @@ a{
     padding: 0 120px;
     color: var(--branco);
 }
+
+/* 
+    Acervo e Livros Recomendados 
+*/
+
+.titulo-secao{
+    margin-top: 50px;
+}
+
+.livros-recomendados{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.livro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 200px;
+    justify-content: space-between;
+}
+
+/* Definindo o tamanho da capa do livro para igualar com os outros */
+.livro img{
+    height: 300px;
+    width: 200px;
+}
+
+.livro h3{
+    margin-top: 10px;
+    text-transform: uppercase;
+    text-align: center ;
+    font-weight: 700;
+    width: 90%;
+    height: 46px;
+}
+
+.info-livro{
+    display: grid;
+    align-items: center;
+    margin-top: 30px;
+    height: 30px;
+}
+
+.info-livro h5{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+/* 
+    Acervo e Livros Recomendados 
+*/
