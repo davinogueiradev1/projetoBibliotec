@@ -405,4 +405,52 @@ footer span {
     .livro img{
         max-width: 100%;
     }
+
+    .livro h3{
+        font-size: 1.2em;
+    }
+
+    .livro-texto{
+        font-size: 1em;
+    }
+}
+
+@media(max-width:768px){
+    .cabecalho{
+        padding: 0 40px;
+
+        position: relative;
+    }
+
+    .botao-menu{
+        /* faz o menu hamburguer aparecer novamente */
+        display: flex;
+    }
+
+    .navegacao{
+        background-color: var(--azul-escuro);
+
+        position: absolute;
+
+        top: 10vh;
+        /* encosta na esquerda */
+        left: 0;
+
+        width: 100%;
+        height: auto;
+
+        padding: 40px;
+
+        border-radius: 0 0 0 30px;
+
+        flex-direction: column;
+        align-items: flex-end;
+
+        gap: 20px;
+
+        /* so funciona com position, quanto maior o z-index, mais para cima o elemento fica */
+        z-index: 100;
+
+        display: none;
+    }
 }
