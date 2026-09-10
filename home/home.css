@@ -1,11 +1,11 @@
 /* Conteudo principal */
 
 /* Primeira Banner */
-.banner-principal{
+.banner-principal {
     color: var(--branco);
 
     height: 70vh;
-    
+
     background-image: url(../imgs/banner-principal-home.png);
     background-size: cover;
 
@@ -18,9 +18,9 @@
     padding: 0 120px;
 }
 
-.texto-banner{
+.texto-banner {
     height: 100%;
-    
+
     display: flex;
     flex-direction: column;
 
@@ -30,12 +30,12 @@
     gap: 50px;
 }
 
-.texto-banner p{
+.texto-banner p {
     font-size: 1.5em;
     width: 60%;
 }
 
-.botao{
+.botao {
     padding: 20px 50px;
 
     border-radius: 10px;
@@ -49,31 +49,31 @@
     text-transform: uppercase;
 }
 
-.botao:hover{
+.botao:hover {
     background-color: #2ab2ab;
     color: var(--branco);
     /* cursor: pointer; */
 }
 
-.banner-principal img{
+.banner-principal img {
     align-self: flex-end;
     width: 35%;
 }
 
 /* Título das seções */
 
-.titulo-secao{
+.titulo-secao {
     display: flex;
     flex-direction: column;
     align-items: center
 }
 
-.titulo-secao h2{
+.titulo-secao h2 {
     font-size: 1.5em;
     margin-bottom: 20px;
 }
 
-.titulo-secao span{
+.titulo-secao span {
     display: flex;
     width: 250px;
     height: 4px;
@@ -84,7 +84,7 @@
     Seção Benefícios 
 */
 
-.beneficios{
+.beneficios {
     padding: 50px 120px;
 
     display: flex;
@@ -96,27 +96,29 @@
     gap: 100px;
 }
 
-.beneficios-lista{
+.beneficios-lista {
     display: grid;
 
-    grid-template-columns: repeat(3,20%);
+    grid-template-columns: repeat(3, 20%);
     gap: 10%;
 
     justify-content: center;
 }
 
-.beneficio{
+.beneficio {
     display: flex;
     flex-direction: column;
 
     align-items: center;
     justify-content: center;
 
-    padding: 80px 20px 50px; /* em cima -> direita e esquerda -> baixo*/
+    padding: 80px 20px 50px;
+    /* em cima -> direita e esquerda -> baixo*/
 
     border: 1px solid var(--azul-escuro);
     border-radius: 30px;
-    box-shadow: 5px 5px 30px rgba(0,0,0,0.25); /*x -> y -> blur(desfoque) -> cor com transparencia*/
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.25);
+    /*x -> y -> blur(desfoque) -> cor com transparencia*/
 
     text-align: center;
 
@@ -125,11 +127,11 @@
     position: relative;
 }
 
-.beneficio-icone img{
+.beneficio-icone img {
     width: 50%;
 }
 
-.beneficio-icone{
+.beneficio-icone {
 
     border: 4px solid var(--cor-destaque);
     background-color: var(--branco);
@@ -159,14 +161,14 @@
     align-items: center; e justify-items:center; */
 }
 
-.beneficio h3{
+.beneficio h3 {
     font-size: 1.2em;
     margin-bottom: 30px;
     text-transform: uppercase;
     width: 90%;
 }
 
-.beneficio p{
+.beneficio p {
     /* "em" trabalha com responsividade */
     font-size: 1em;
     width: 80%;
@@ -175,7 +177,7 @@
 /* 
     Banner Meio 
 */
-.banner-meio{
+.banner-meio {
     height: 60vh;
     background-image: url(../imgs/Banner\ centro.svg);
     background-size: cover;
@@ -194,7 +196,7 @@
 
 
 
-.livros-recomendados{
+.livros-recomendados {
     display: flex;
     justify-content: center;
     gap: 100px;
@@ -205,7 +207,7 @@
     padding: 50px 120px;
 }
 
-.livro{
+.livro {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -215,28 +217,28 @@
 }
 
 /* Definindo o tamanho da capa do livro para igualar com os outros */
-.livro img{
+.livro img {
     height: 300px;
     width: 200px;
 }
 
-.livro h3{
+.livro h3 {
     margin-top: 10px;
     text-transform: uppercase;
     font-size: 1em;
-    text-align: center ;
+    text-align: center;
     font-weight: 700;
     width: 65%;
     height: 46px;
 }
 
-.info-livro{
+.info-livro {
     display: grid;
     align-items: center;
     height: 30px;
 }
 
-.info-livro h5{
+.info-livro h5 {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -246,4 +248,121 @@
 /* 
     Acervo e Livros Recomendados 
 */
+.acervo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 100px;
 
+    padding: 50px 120px;
+}
+
+.livros {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: center;
+    gap: 5%;
+}
+
+.livro {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+    gap: 20px;
+
+    align-items: center;
+    text-align: center;
+}
+
+.livro img {
+    height: 300px;
+}
+
+.livro h3 {
+    text-transform: uppercase;
+    font-size: 1em;
+    width: 65%;
+}
+
+.livro-texto {
+    font-size: 0.8em;
+}
+
+/* footer - feito pelos alunos */
+
+footer {
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    padding: 100px 120px 30px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodape-logos {
+    display: flex;
+    flex-direction: column;
+    gap: 130px;
+}
+
+.rodape-informacoes {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 100px;
+}
+
+.nav-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-footer p {
+    color: var(--cor-destaque);
+    margin-bottom: 20px;
+
+}
+
+.nav-footer a {
+    color: var(--branco);
+    margin-bottom: 10px;
+}
+
+.icones {
+    display: flex;
+    gap: 20px;
+}
+
+footer span {
+    display: flex;
+    margin: 50px 0;
+    background-color: white;
+    height: 1px;
+    width: 100%;
+}
+
+.footer-inferior {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.rodape-informacoes p {
+    color: var(--cor-destaque);
+    font-size: 1em;
+    font-weight: 700;
+    width: 100%;
+}
+
+.footer-inferior {
+    display: flex;
+}
