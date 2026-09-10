@@ -1,6 +1,6 @@
-/* Conteudo principal */
+/* Conteúdo principal */
 
-/* Primeira Banner */
+/* Primeiro banner */
 .banner-principal {
     color: var(--branco);
 
@@ -9,7 +9,7 @@
     background-image: url(../imgs/banner-principal-home.png);
     background-size: cover;
 
-    /* overflow: hidden; evita que os elementos transbordem */
+    /* overflow: hidden;  evita que os elementos transbordem */
 
     display: flex;
     align-items: center;
@@ -60,12 +60,12 @@
     width: 35%;
 }
 
-/* Título das seções */
+/* Titulo das seções */
 
 .titulo-secao {
     display: flex;
     flex-direction: column;
-    align-items: center
+    align-items: center;
 }
 
 .titulo-secao h2 {
@@ -80,9 +80,7 @@
     background-color: var(--cor-destaque);
 }
 
-/* 
-    Seção Benefícios 
-*/
+/* Seção Benefícios */
 
 .beneficios {
     padding: 50px 120px;
@@ -112,18 +110,17 @@
     align-items: center;
     justify-content: center;
 
-    padding: 80px 20px 50px;
-    /* em cima -> direita e esquerda -> baixo*/
+    padding: 80px 20px 50px; /* em cima -> direita e esquerda -> embaixo */
 
     border: 1px solid var(--azul-escuro);
     border-radius: 30px;
-    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.25);
-    /*x -> y -> blur(desfoque) -> cor com transparencia*/
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.25); /* x -> y -> blur -> cor com transparência */
 
     text-align: center;
 
-    /* cria referencia de posicionamento para o icone, quando o icone for posicionado, usa esse card como referencia */
-    /* sem isso, o circulo poderia usar outro elemento da pagina como referencia e sair passeando pelo layout */
+    /* Cria referência de posicionamento para o ícone, quando o ícone for posicionado, uas esse card como referência. */
+
+    /* sem isso, o círculo poderia usar outro elemento da página como referência e sair passeando pelo layout. */
     position: relative;
 }
 
@@ -140,25 +137,24 @@
     width: 30%;
     height: 30%;
 
-    /* retira o icone do fluxo normal, com absolute ele pode ficar por cima do card */
+    /* Retira o ícone do fluxo normal, com o absolute ele pode ficar por cima do card */
     position: absolute;
 
-    /* move o circulo para cima, o valor negativo faz ele sair parcialmente do card */
+    /* Move o círculo para cima, o valor negativo faz ele sair parcialmente do card */
     top: -15%;
 
-    /* coloca o começo do elemento em 50% da largura do card, a sua esquerda */
+    /* Coloca o começo do elemento em 50% da largura do card */
     left: 50%;
 
-    /* ajustamos o posicionamento do elemento, mas a borda esquerda do circulo fica no centro, nao o circulo inteiro */
-    /* por isso usamos o transform: translateX(-50%); que move o circulo para a esquerda em 50% da largura dele, 
-    fazendo com que o circulo fique perfeitamente centralizado*/
+    /* ajustamos o posicionamento do elemento, mas a borda esquerda do círculo fica no centro, não o círculo inteiro */
+    /* por isso usamos transform: translateX(-50%); que move o próprio círculo para a esquerda em 50% da largura dele, fazendo com que o círculo fique perfeitamente centralizado. */
     transform: translateX(-50%);
 
     display: grid;
     place-items: center;
 
-    /* place-items: center; é a mesma coisa que colocar:
-    align-items: center; e justify-items:center; */
+    /* place-items: center; é a mesma coisa que colocar: 
+        align-itens: center e justify-items: center; */
 }
 
 .beneficio h3 {
@@ -169,14 +165,11 @@
 }
 
 .beneficio p {
-    /* "em" trabalha com responsividade */
     font-size: 1em;
     width: 80%;
 }
 
-/* 
-    Banner Meio 
-*/
+/* Banner meio */
 .banner-meio {
     height: 60vh;
     background-image: url(../imgs/Banner\ centro.svg);
@@ -190,64 +183,8 @@
     color: var(--branco);
 }
 
-/* 
-    Acervo e Livros Recomendados 
-*/
+/* Acervo */
 
-
-
-.livros-recomendados {
-    display: flex;
-    justify-content: center;
-    gap: 100px;
-    /* margin-top: 50px; */
-    /* margin-bottom: 50px; */
-
-    /* padding está distanciando o elemento internamente */
-    padding: 50px 120px;
-}
-
-.livro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    width: 200px;
-    justify-content: space-between;
-}
-
-/* Definindo o tamanho da capa do livro para igualar com os outros */
-.livro img {
-    height: 300px;
-    width: 200px;
-}
-
-.livro h3 {
-    margin-top: 10px;
-    text-transform: uppercase;
-    font-size: 1em;
-    text-align: center;
-    font-weight: 700;
-    width: 65%;
-    height: 46px;
-}
-
-.info-livro {
-    display: grid;
-    align-items: center;
-    height: 30px;
-}
-
-.info-livro h5 {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-
-/* 
-    Acervo e Livros Recomendados 
-*/
 .acervo {
     display: flex;
     flex-direction: column;
@@ -289,9 +226,9 @@
     font-size: 0.8em;
 }
 
-/* footer - feito pelos alunos */
+/* footer  */
 
-footer {
+footer{
     background-color: var(--azul-escuro);
     color: var(--branco);
     padding: 100px 120px 30px;
@@ -316,7 +253,7 @@ footer {
     gap: 100px;
 }
 
-.nav-footer {
+.nav-footer  {
     display: flex;
     flex-direction: column;
 }
@@ -326,7 +263,6 @@ footer {
     margin-bottom: 20px;
 
 }
-
 .nav-footer a {
     color: var(--branco);
     margin-bottom: 10px;
@@ -365,4 +301,108 @@ footer span {
 
 .footer-inferior {
     display: flex;
+}
+
+/* 
+    RESPONSIVIDADE 
+*/
+
+.botao-menu{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+    /* esconde o elemento */
+    display: none;
+}
+
+.botao-menu i{
+    font-size: 2em;
+    
+    color: var(--branco);
+}
+
+/* 
+    RESPONSIVIDADE COM TAMANHOS -> MEDIA QUERY 
+*/
+
+@media(max-width: 1024px){
+    html{
+        font-size: 12px;
+    }
+
+    .cabecalho img{
+        width: 60%;
+    }
+
+    .texto-banner h1{
+        text-align: center;
+    }
+
+    /* BENEFICIOS */
+
+    .beneficios{
+        gap: 50px;
+
+        padding: 30px 0;
+
+        overflow: hidden;
+    }
+
+    .beneficios-lista{
+        grid-template-columns: repeat(3,30%);
+
+        overflow-x: scroll; /*permite que o objeto role para o lado*/
+
+        padding: 50px 20px;
+        justify-content: flex-start;
+    }
+
+    .beneficios-lista::-webkit-scrollbar{
+        display: none;
+    }
+
+    .beneficio{
+        padding: 80px 10px 50px;
+    }
+
+    .beneficio h3{
+        margin-bottom: 25px;
+        width: 60%;
+    }
+
+    .beneficio p{
+        width: 60%;
+    }
+
+    /* BANNER MEIO */
+
+    .banner-meio{
+        background-position: center;
+        padding: 0 30px;
+    }
+
+    .banner-meio .texto-banner{
+        align-items: flex-end;
+    }
+
+    .banner-meio .texto-banner p{
+        text-align: right;
+    }
+
+    /* ACERVO */
+    .acervo{
+        padding: 70px 40px;
+        gap: 50px;
+    }
+
+    .livros {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+        gap: 40px 20px;
+    }
+
+    .livro img{
+        max-width: 100%;
+    }
 }
